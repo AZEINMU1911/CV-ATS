@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link
-            to={isAuthenticated ? "/main" : "/"}
+            to={isAuthenticated ? "/home" : "/"}
             className="text-2xl font-bold text-yellow-300 hover:text-yellow-400 transition"
           >
             CVATS
@@ -33,7 +33,7 @@ const Navbar = () => {
                   Welcome, {user?.firstName || user?.email}
                 </span>
                 <Link
-                  to="/main"
+                  to="/home"
                   className="font-semibold hover:text-yellow-300 transition"
                 >
                   Dashboard
@@ -91,7 +91,7 @@ const Navbar = () => {
                   Welcome, {user?.firstName || user?.email}
                 </span>
                 <Link
-                  to="/main"
+                  to="/home"
                   className="block font-semibold hover:text-yellow-300 transition"
                   onClick={() => setIsMenuOpen(false)}
                 >
